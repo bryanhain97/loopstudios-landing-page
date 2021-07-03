@@ -40,3 +40,12 @@ for(let element of pictureElements){
 
     imgSection.appendChild(newElement);
 }
+
+const footerMenu = document.querySelector('.footer-menu ul');
+let menuElements = ['About', 'Careers', 'Events', 'Products', 'Support'];
+for(let element of menuElements){
+    let menuItem = document.createElement('a')
+    menuItem.textContent = element
+    menuItem.href = "#"
+    footerMenu.appendChild(menuItem)
+}
